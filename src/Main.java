@@ -3,12 +3,13 @@ public class Main {
 
         System.out.println("Hello world!");
 
-        Ebook livro1 = new Ebook("Orgulho e Preconceito", "Jane Austen", 424);
-        Ebook livro2 = new Ebook("Teto para Dois", "Beth O'Leary", 400);
-        Ebook livro3 = new Ebook("Arquipélago", "Leslie Cadero", 496);
+        ItemBibliotecaDigital livro1 = new Ebook("Orgulho e Preconceito", "Jane Austen", 424);
+        ItemBibliotecaDigital livro2 = new Ebook("Teto para Dois", "Beth O'Leary", 400);
+        ItemBibliotecaDigital livro3 = new Ebook("Arquipélago", "Leslie Cadero", 496);
 
-        VideoDigital video1 = new VideoDigital("Primeira aula de Python", "Gustavo Guanabara");
-        VideoDigital video2 = new VideoDigital("", "");
+        ItemBibliotecaDigital video1 = new VideoDigital("Primeira aula de Python", "Gustavo Guanabara");
+        ItemBibliotecaDigital video2 = new VideoDigital("", "");
+        ItemBibliotecaDigital video3 = new VideoDigital("","");
 
     }
 }
