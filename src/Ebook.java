@@ -12,7 +12,8 @@ public class Ebook extends ItemBibliotecaDigital {
         return "O eBook " + getTitulo() + " do autor " + getAutor() + " possui " + getPaginas() + " páginas" ;
     }
     public void visualizar() {
-        System.out.println("Você esta visualizando o eBook " + getTitulo() + " com " + getPaginas() + " páginas ");
+        System.out.println("Você esta visualizando o eBook " + getTitulo());
+        System.out.println();
     }
 
     public double getPaginas() {

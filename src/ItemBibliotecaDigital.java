@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public abstract class ItemBibliotecaDigital implements Visualizavel, Baixavel{
     private String titulo;
     private String autor;
@@ -6,6 +8,18 @@ public abstract class ItemBibliotecaDigital implements Visualizavel, Baixavel{
         this.titulo = titulo;
         this.autor = autor;
 
+    }
+    public static void menu(ItemBibliotecaDigital item){
+        Scanner sc = new Scanner(System.in);
+        System.out.println("[ 1 ] - Baixar\n" +
+                "[ 2 ] - Visualizar");
+        int menu = sc.nextInt();
+        if (menu == 1){
+            item.baixar();
+        }
+        else if (menu == 2){
+            item.visualizar();
+        }
     }
 
     public String getAutor() {
