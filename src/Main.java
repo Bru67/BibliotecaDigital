@@ -32,6 +32,8 @@ public class Main {
                     if (ebookId >= 0 && ebookId <= ebooks.size()) {
                         ItemBibliotecaDigital item = ebooks.get(ebookId);
                         item.descricao();
+                        System.out.println();
+                        item.menu(item);
                     }
                     else{
                         System.out.println("Opção Inválida!");
@@ -45,8 +47,10 @@ public class Main {
                     }
                     int videoId = sc.nextInt();
                     if (videoId >= 0 && videoId <= videos.size()) {
-                        ItemBibliotecaDigital videoSelecionado = videos.get(videoId);
-                        videoSelecionado.descricao();
+                        ItemBibliotecaDigital item = videos.get(videoId);
+                        item.descricao();
+                        System.out.println();
+                        item.menu(item);
                     }
                     else{
                         System.out.println("Opção Inválida!");

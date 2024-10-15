@@ -8,8 +8,8 @@ public class Ebook extends ItemBibliotecaDigital {
     public void baixar() {
         System.out.println("Download realizado com sucesso!");
     }
-    public String descricao() {
-        return "O eBook " + getTitulo() + " do autor " + getAutor() + " possui " + getPaginas() + " páginas" ;
+    public void descricao() {
+        System.out.println("O eBook " + getTitulo() + " do autor " + getAutor() + " possui " + getPaginas() + " páginas" );
     }
     public void visualizar() {
         System.out.println("Você esta visualizando o eBook " + getTitulo());

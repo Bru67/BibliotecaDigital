@@ -4,8 +4,8 @@ public class VideoDigital extends ItemBibliotecaDigital{
         super(titulo, autor);
     }
 
-    public String descricao(){
-        return "O vídeo " + getTitulo() + " com o autor " + getAutor() ;
+    public void descricao(){
+        System.out.println("O vídeo " + getTitulo() + " com o autor " + getAutor());
     }
 
     public void baixar() {

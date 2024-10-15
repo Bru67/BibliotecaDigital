@@ -9,7 +9,7 @@ public abstract class ItemBibliotecaDigital implements Visualizavel, Baixavel{
         this.autor = autor;
 
     }
-    public static void menu(ItemBibliotecaDigital item){
+    public void menu(ItemBibliotecaDigital item){
         Scanner sc = new Scanner(System.in);
         System.out.println("[ 1 ] - Baixar\n" +
                 "[ 2 ] - Visualizar");
@@ -29,5 +29,5 @@ public abstract class ItemBibliotecaDigital implements Visualizavel, Baixavel{
         return titulo;
     }
 
-    public abstract String descricao();
+    public abstract void descricao();
 }
